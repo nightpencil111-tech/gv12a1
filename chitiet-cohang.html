@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri ân Cô Phan Thị Hằng - 12A1</title>
+    
+    <style>
+        /* --- 1. CÀI ĐẶT CƠ BẢN --- */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f9; 
+            line-height: 1.6;
+        }
+        * { box-sizing: border-box; }
+
+        /* --- 2. KHỐI BANNER & THANH ĐIỀU HƯỚNG (GIỮ NGUYÊN TỪ TRANG TRƯỚC) --- */
+        .top-banner { width: 100%; background-color: #fff; text-align: center; }
+        .top-banner img { width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto; }
+        
+        .red-navbar {
+            background-color: #c62828; 
+            display: flex; justify-content: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+            position: sticky; top: 0; z-index: 100;
+        }
+        .red-navbar a {
+            color: #ffffff; padding: 16px 30px; text-decoration: none;
+            font-weight: bold; font-size: 16px; text-transform: uppercase; 
+            transition: background-color 0.3s;
+        }
+        .red-navbar a:hover, .red-navbar a.active { background-color: #b71c1c; }
+
+        /* --- 3. BỐ CỤC TRANG CHI TIẾT GIÁO VIÊN --- */
+        .profile-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px; /* Khoảng cách giữa cột trái và phải */
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Cột bên trái (Ảnh & Nút quay lại) */
+        .profile-sidebar {
+            flex: 1; /* Chiếm 1 phần */
+            max-width: 350px;
+            text-align: center;
+        }
+        .profile-sidebar img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #ccc;
+        }
+        .back-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Cột bên phải (Thông tin & Lời tri ân) */
+        .profile-content {
+            flex: 2; /* Chiếm 2 phần (Rộng gấp đôi cột trái) */
+        }
+        .profile-name {
+            font-size: 32px;
+            color: #c62828; /* Màu đỏ cho đồng bộ */
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .profile-subject {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+
+        /* Hộp thư tri ân */
+        .gratitude-box {
+            background-color: #fff9f9; /* Nền hơi hồng nhẹ */
+            border-left: 5px solid #c62828;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .gratitude-box h3 {
+            margin-top: 0;
+            color: #c62828;
+        }
+
+        /* Ảnh kỷ niệm chung (nếu có) */
+        .memory-images {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .memory-images img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Đáp ứng thiết bị nhỏ (Điện thoại) */
+        @media (max-width: 800px) {
+            .profile-container {
+                flex-direction: column; /* Chuyển từ xếp ngang sang xếp dọc */
+                align-items: center;
+            }
+            .profile-sidebar { max-width: 100%; }
+            .memory-images { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="red-navbar">
+        <a href="giaovien.html">Trang Chủ</a>
+        <a href="index.html#luu-but">Lưu Bút</a>
+    </nav>
+
+    <div class="profile-container">
+        
+        <div class="profile-sidebar">
+            <img src="d:\Downloads\z7698528258310_94953c409065681576336446d2f12ae9.jpg" alt="Cô Phan Thị Hằng">
+            <a href="giaovien.html" class="back-button">⬅ Quay lại danh sách</a>
+        </div>
+
+        <div class="profile-content">
+            <h1 class="profile-name">Cô Phan Thị Hằng</h1>
+            <div class="profile-subject">Giáo viên Chủ nhiệm / Môn Vật Lý</div>
+
+            <p>
+                Cô Hằng kính mến, thay mặt tập thể lớp 12A1, chúng em xin gửi đến cô những lời tri ân sâu sắc nhất. Cảm ơn cô đã không chỉ là một giáo viên truyền đạt kiến thức môn Vật Lý khô khan thành những bài giảng sinh động, mà còn là một người mẹ hiền thứ hai của lớp.
+            </p>
+            <p>
+                Ba năm thanh xuân dưới mái trường Trần Phú, sự tận tụy, nghiêm khắc nhưng đầy bao dung của cô chính là hành trang quý giá nhất để chúng em tự tin bước vào đời.
+            </p>
+
+            <div class="gratitude-box">
+                <h3>💌 Lời nhắn gửi từ 12A1</h3>
+                <p><i>"Nhớ mãi những giờ sinh hoạt lớp cô trò cùng nhau tâm sự. Chúng em xin lỗi vì những lần làm cô buồn. Chúc cô luôn mạnh khỏe, công tác tốt và mãi là người lái đò vĩ đại trong lòng chúng em!"</i></p>
+            </div>
+
+            <div class="memory-images">
+                <img src="c:\Users\Windows\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 234705.png" alt="Kỷ niệm 1">
+                <img src="c:\Users\Windows\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 234756.png" alt="Kỷ niệm 2">
+                <img src="c:\Users\Windows\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 234838.png" alt="Kỷ niệm 3">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

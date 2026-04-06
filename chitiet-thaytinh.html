@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri ân Thầy Nguyễn Hữu Tình - 12A1</title>
+    
+    <style>
+        /* --- CÀI ĐẶT CƠ BẢN VÀ DÙNG CHUNG (Tương tự trang Cô Hằng) --- */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; line-height: 1.6; }
+        * { box-sizing: border-box; }
+
+        .top-banner { width: 100%; background-color: #fff; text-align: center; }
+        .top-banner img { width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto; }
+        
+        .red-navbar {
+            background-color: #c62828; display: flex; justify-content: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 100;
+        }
+        .red-navbar a {
+            color: #ffffff; padding: 16px 30px; text-decoration: none;
+            font-weight: bold; font-size: 16px; text-transform: uppercase; transition: background-color 0.3s;
+        }
+        .red-navbar a:hover, .red-navbar a.active { background-color: #b71c1c; }
+
+        /* --- BỐ CỤC TRANG CHI TIẾT --- */
+        .profile-container {
+            max-width: 1100px; margin: 40px auto; padding: 20px;
+            display: flex; gap: 40px; background-color: white;
+            border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-sidebar { flex: 1; max-width: 350px; text-align: center; }
+        .profile-sidebar img {
+            width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); margin-bottom: 20px;
+        }
+        .back-button {
+            display: inline-block; background-color: #f1f1f1; color: #333; padding: 10px 20px;
+            text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; border: 1px solid #ccc;
+        }
+        .back-button:hover { background-color: #e0e0e0; }
+
+        .profile-content { flex: 2; }
+        .profile-name { font-size: 32px; color: #c62828; margin-top: 0; margin-bottom: 5px; }
+        .profile-subject {
+            font-size: 18px; font-weight: bold; color: #555; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee;
+        }
+
+        .gratitude-box {
+            background-color: #f4f8ff; /* Đổi màu nền hộp thư sang xanh dương nhạt cho thầy */
+            border-left: 5px solid #1976d2; /* Đổi viền sang xanh dương cho nam tính/khoa học */
+            padding: 20px; margin-top: 20px; border-radius: 0 8px 8px 0;
+        }
+        .gratitude-box h3 { margin-top: 0; color: #1976d2; }
+
+        .memory-images { display: flex; gap: 15px; margin-top: 25px; }
+        .memory-images img {
+            width: 100%; max-width: 200px; border-radius: 8px; object-fit: cover; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 800px) {
+            .profile-container { flex-direction: column; align-items: center; }
+            .profile-sidebar { max-width: 100%; }
+            .memory-images { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="red-navbar">
+        <a href="giaovien.html">Trang Chủ</a>
+        <a href="index.html#luu-but">Lưu Bút</a>
+    </nav>
+
+    <div class="profile-container">
+        
+        <div class="profile-sidebar">
+            <img src="d:\Downloads\z7698528086042_d2fd08ae9c4499d44c357cb334f5e9f6.jpg" alt="Thầy Nguyễn Hữu Tình">
+            <a href="giaovien.html" class="back-button">⬅ Quay lại danh sách</a>
+        </div>
+
+        <div class="profile-content">
+            <h1 class="profile-name">Thầy Nguyễn Hữu Tình</h1>
+            <div class="profile-subject">Giáo viên môn Toán</div>
+
+            <p>
+                Thầy Tình kính mến, tập thể 12A1 chúng em xin gửi đến thầy những lời tri ân chân thành nhất. Nhờ có sự tận tâm, kiên nhẫn và phương pháp giảng dạy vô cùng logic của thầy, những bài toán khó nhằn, những đạo hàm hay tích phân phức tạp đã trở nên dễ hiểu và thú vị hơn rất nhiều.
+            </p>
+            <p>
+                Thầy không chỉ dạy cho chúng em cách tìm ra đáp số của một bài toán, mà còn dạy chúng em tư duy logic, sự cẩn thận và cách đối mặt với những thử thách khó khăn trong học tập cũng như trong cuộc sống.
+            </p>
+
+            <div class="gratitude-box">
+                <h3>📐 Lời nhắn gửi từ 12A1</h3>
+                <p><i>"Cảm ơn thầy vì những giờ học Toán đầy say mê và cả những lần thầy kiên nhẫn giảng đi giảng lại cho những đứa học trò còn chậm hiểu. Chúng em chúc thầy luôn mạnh khỏe, giữ mãi ngọn lửa đam mê với nghề giáo và tiếp tục truyền cảm hứng cho nhiều thế hệ học sinh tiếp theo!"</i></p>
+            </div>
+
+            <div class="memory-images">
+                <img src="c:\Users\Windows\OneDrive\Pictures\Screenshots\Screenshot 2026-04-06 235139.png" alt="Kỷ niệm giờ Toán 1">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo viên dạy các bộ môn - 12A1</title>
+    
+    <style>
+        /* --- 1. CÀI ĐẶT CƠ BẢN --- */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f9; 
+        }
+        * { box-sizing: border-box; }
+
+        /* --- 2. KHỐI BANNER TRÊN CÙNG --- */
+        .top-banner {
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+        }
+        .top-banner img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* --- 3. THANH ĐIỀU HƯỚNG MÀU ĐỎ (RED NAVBAR) --- */
+        .red-navbar {
+            background-color: #c62828; 
+            display: flex;
+            justify-content: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+            position: sticky; /* Giữ thanh đỏ dính trên cùng khi cuộn */
+            top: 0;
+            z-index: 100;
+        }
+        .red-navbar a {
+            color: #ffffff;
+            padding: 16px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase; 
+            transition: background-color 0.3s;
+        }
+        .red-navbar a:hover, .red-navbar a.active {
+            background-color: #b71c1c; 
+        }
+
+        /* --- 4. KHU VỰC NỘI DUNG CHÍNH --- */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Tiêu đề phân mục */
+        .section-title {
+            color: #c62828;
+            border-bottom: 2px solid #c62828;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Lưới giáo viên */
+        .teacher-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 25px; 
+        }
+
+        /* --- 5. TRANG TRÍ THẺ GIÁO VIÊN --- */
+        .teacher-card {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden; 
+            text-decoration: none; 
+            color: #333;
+            height: 320px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+        }
+
+        .teacher-image {
+            height: 66.66%; 
+            width: 100%;
+        }
+        .teacher-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .teacher-info {
+            height: 33.34%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;     
+            background-color: #fff;
+            padding: 10px;
+            border-top: 3px solid #c62828; /* Thêm viền đỏ cho hợp tone */
+        }
+        .teacher-name {
+            font-weight: bold; 
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .teacher-subject {
+            font-size: 14px;
+            color: #e74c3c; 
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .teacher-grid { grid-template-columns: repeat(2, 1fr); } 
+        }
+        @media (max-width: 500px) {
+            .teacher-grid { grid-template-columns: 1fr; } 
+            .red-navbar { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-banner">
+        <img src="Screenshot 2026-04-06 233100.png" alt="Banner Trường">
+    </div>
+
+    <nav class="red-navbar">
+        <a href="giaovien.html">Trang Chủ</a>
+        <a href="index.html#luu-but">Lưu Bút</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Danh sách Giáo viên bộ môn lớp 12A1</h2>
+
+        <div class="teacher-grid">
+            <a href="chitiet-cohang.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698528258310_94953c409065681576336446d2f12ae9.jpg" alt="Cô Phan Thị Hằng">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Phan Thị Hằng</div>
+                    <div class="teacher-subject">Giáo viên Chủ nhiệm / Môn Vật Lý</div>
+                </div>
+            </a>
+
+            <a href="chitiet-thaytinh.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698528086042_d2fd08ae9c4499d44c357cb334f5e9f6.jpg" alt="Thầy Nguyễn Hữu Tình">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Thầy Nguyễn Hữu Tình</div>
+                    <div class="teacher-subject">Giáo viên môn Toán</div>
+                </div>
+            </a>
+
+            <a href="chitiet-cohuong.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698525090550_cd840b17f98fc0b50adb29a8c7e34643.jpg" alt="Cô Hồ Thanh Hương">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Hồ Thanh Hương</div>
+                    <div class="teacher-subject">Giáo viên môn Tiếng Anh</div>
+                </div>
+            </a>
+
+            <a href="chitiet-colananh.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698535553267_72e7c7edc323e7bcff8799873ad8ccdf.jpg" alt="Cô Nguyễn Thị Lan Anh">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Nguyễn Thị Lan Anh</div>
+                    <div class="teacher-subject">Giáo viên môn Ngữ Văn</div>
+                </div>
+            </a>
+
+            <a href="chitiet-thayhoang.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7648965772611_8dc8bc38b3ab80fb4c4939f043b4573b.jpg" alt="Thầy Trần Văn Hoàng">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Thầy Trần Văn Hoàng</div>
+                    <div class="teacher-subject">Giáo viên môn Hóa Học</div>
+                </div>
+            </a>
+
+            <a href="chitiet-cokhanh.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698562140917_18f8b396ca6b6fe0476a00c2ad65fe7e.jpg" alt="Cô Hồ Thị Kim Khánh">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Hồ Thị Kim Khánh</div>
+                    <div class="teacher-subject">Giáo viên môn Sinh Học</div>
+                </div>
+            </a>
+
+            <a href="chitiet-cohuyentrang.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698539150483_d6c9a6aa36999d6d29d2abb493b3c341.jpg" alt="Cô Trần Thị Huyền Trang">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Trần Thị Huyền Trang</div>
+                    <div class="teacher-subject">Giáo viên môn Lịch Sử</div>
+                </div>
+            </a>
+
+            <a href="chitiet-thaylap.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698555109028_969d331823f9824d5d8bb5754bae6707.jpg" alt="Thầy Trần Xuân Lập">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Thầy Trần Xuân Lập</div>
+                    <div class="teacher-subject">Giáo viên môn Thể Dục</div>
+                </div>
+            </a>
+
+            <a href="chitiet-cooanh.html" class="teacher-card">
+                <div class="teacher-image">
+                    <img src="d:\Downloads\z7698583037263_447dafb9453c726d2c08f4ee439d0af4.jpg" alt="Cô Nguyễn Thị Kim Oanh">
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Cô Nguyễn Thị Kim Oanh</div>
+                    <div class="teacher-subject">Giáo viên môn Tin Học</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
